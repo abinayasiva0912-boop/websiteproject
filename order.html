@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Page</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<h2>Your Cart</h2>
+<div id="cartItems"></div>
+<button onclick="placeOrder()">Place Order</button>
+<!-- Success Popup -->
+<div id="successPopup" class="popup">
+    <div class="popup-content">
+        <i class="fa-solid fa-circle-check"></i>
+        <h2>Order Placed Successfully!</h2>
+    </div>
+</div>
+
+<!-- Sound -->
+<audio id="successSound">
+  <source src="https://www.soundjay.com/buttons/sounds/button-3.mp3" type="audio/mpeg">
+</audio>
+
+<div id="successBox">
+    <i class="fa fa-check-circle"></i>
+    <h2>Order Placed Successfully!</h2>
+</div>
+
+<audio id="successSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+
+</body>
+</html>

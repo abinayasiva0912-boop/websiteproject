@@ -1,0 +1,97 @@
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+}
+
+header{
+background:#ff4d94;
+color:white;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.btn{
+background:white;
+color:#ff4d94;
+padding:10px 20px;
+text-decoration:none;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+width:250px;
+margin:20px;
+box-shadow:0 0 10px gray;
+padding:10px;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+button{
+background:#ff4d94;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+#successBox{
+display:none;
+color:green;
+font-size:25px;
+margin-top:20px;
+}
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+padding:40px;
+border-radius:10px;
+text-align:center;
+animation:pop 0.5s ease;
+}
+
+.popup-content i{
+font-size:70px;
+color:green;
+margin-bottom:15px;
+}
+
+@keyframes pop{
+0%{transform:scale(0.5); opacity:0;}
+100%{transform:scale(1); opacity:1;}
+}
